@@ -379,6 +379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sphereRigidbody: {fileID: 142951841}
   ballSpeed: 2
+  jumpForce: 3
 --- !u!114 &142951847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,6 +407,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  ballController: {fileID: 142951846}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,13 +494,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.19990197, y: -0, z: -0, w: 0.9798159}
-  m_LocalPosition: {x: 0, y: 5.83, z: -10.13}
+  m_LocalRotation: {x: 0.32237646, y: -0, z: -0, w: 0.9466115}
+  m_LocalPosition: {x: 0, y: 8.82, z: -10.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 23.062, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 37.613, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,7 +1053,7 @@ GameObject:
   - component: {fileID: 1942663175}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

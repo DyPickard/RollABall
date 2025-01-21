@@ -4,17 +4,13 @@ using UnityEngine.Events;
 public class InputManager : MonoBehaviour
 {
     public UnityEvent<Vector2> OnMove = new UnityEvent<Vector2>();
-
-
-    void Start()
-    {
-        
-    }
+    public BallController ballController;
 
 
     void Update()
     {
         Vector2 inputVector = Vector2.zero;
+
         if (Input.GetKey(KeyCode.W)) 
         {
             inputVector += Vector2.up;
@@ -32,5 +28,10 @@ public class InputManager : MonoBehaviour
             inputVector += Vector2.left;
         }
         OnMove?.Invoke(inputVector);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ballController.Jump();
+        }
     }
 }
